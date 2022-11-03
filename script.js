@@ -69,12 +69,13 @@ function func1() {
       ageyear -= 1;
     }
     if (ageday <= 0 ? (ageday += 30) : ageday);
-    if (birthyear % 4 == 0 ? (ageday += 1) : ageday)
-      console.log(ageyear, agemonth, ageday);
-
+    if (birthday < newday ? (agemonth -= 1) : agemonth)
+      if (birthyear % 4 == 0 ? (ageday += 1) : ageday)
+        console.log(ageyear, agemonth, ageday);
+    // console.log(birthyear, birthmonth, birthday);
     container.style.display = "flex";
     console.log(birthyear, birthmonth, birthday);
-    text = `Your age is ${ageyear} Years ${agemonth} Month and ${agemonth}`;
+    text = `Your age is ${ageyear} Years ${agemonth} Month and ${ageday} Days`;
     info.innerText = text;
   } else {
     console.log("error occurred");
