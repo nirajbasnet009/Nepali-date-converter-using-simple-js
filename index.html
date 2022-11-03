@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date converter</title>
+    <style>
+      body {
+        position: relative;
+      }
+      .container {
+        position: fixed;
+        background-color: rgb(50, 49, 49);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        color: white;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="yyyy" id="date" /><br />
+    <input type="text" placeholder="mm" id="date1" /><br />
+    <input type="text" placeholder="dd" id="date2" /><br />
+
+    <button id="btn">Enter</button>
+    <h1 id="demo"></h1>
+    <div class="container" onclick="style.display='none'">
+      <div class="info"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
